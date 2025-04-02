@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Revolution&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+}
+
+header {
+    background-color:transparent;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.welcome-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('fatching_water.jpg') center/cover no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.welcome-content {
+    max-width: 600px;
+}
+
+.welcome-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#contract-countdown {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+    color: #283593;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-item {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 600px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio in the modal */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section p {
+    margin-bottom: 1rem;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.social-media a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #283593;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid #444;
+    padding-top: 0.5rem;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 20rem;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #283593;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.back-to-top:hover {
+    background-color: #1f2a69;
+}
+
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    
+}
+.About-intro,.About-intro2{
+    width: 50%;
+    padding: 1rem;
+    gap: 20px;
+    border: solid;
+    border-radius: 20px;
+    margin: 10px;
+    height: fit-content;
+}
+.about-intro-img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 5px;
+   transition: transform .2s;
+}
+.forever-sanitation-icone{
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+}
+.about-intro-img:hover{
+    transform: scale(1.01)
+}
+#donate{
+    margin: 0px;
+}
+.container-d0nation{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Donation.jpeg') center/cover no-repeat;
+    width: 100%;
+    height: 100vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    align-items: center;
+    font-size: large;
+    text-align: left;
+    padding: 2px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+.product-item {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border: #ddd 1px solid;
+}
+.product-item h2 {
+    margin-top: 0;
+}
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+.product-item .price {
+    color: #e74c3c;
+    font-size: 1.2em;
+}
+.product-item .add-to-cart-btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.product-item .add-to-cart-btn:hover {
+    background: #555;
+}
+.cart {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border: #ddd 1px solid;
+}
+.cart h2 {
+    margin-top: 0;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.cart-item span {
+    font-size: 1.1em;
+}
+.cart-total {
+    text-align: right;
+    margin-top: 20px;
+}
+.cart-total span {
+    font-size: 1.2em;
+    color: #e74c3c;
+}
+.contact-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+.contact-buttons a {
+    display: inline-block;
+    background: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+}
+.contact-buttons a:hover {
+    background: #21b75a;
+}
+.notice {
+    background: #ffeb3b;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #ffc107;
+}
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .header{
+        background-color: #1f2a69;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+        justify-content: space-between;
+        background-color:rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      padding: 50px;
+    }
+
+    .nav-links li {
+        text-align: center;
+        font-size: 20px;
+        background-color: #218838;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .about-section{
+        width: 100%;
+        padding: 5px;
+    }
+    .About-intro, .About-intro2{
+        margin: 0px;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .about-section{
+        flex-wrap: wrap;    
+    }
+}
