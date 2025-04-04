@@ -348,7 +348,7 @@ button:hover {
 .container-d0nation{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Donation.jpeg') center/cover no-repeat;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
