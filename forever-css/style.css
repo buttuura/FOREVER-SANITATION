@@ -51,7 +51,7 @@ header {
 }
 
 .welcome-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('fatching_water.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header-43-3x2-1.jpg') center/cover no-repeat;
     color: white;
     height: 100vh;
     display: flex;
@@ -143,7 +143,6 @@ body {
     border-radius: 10px;
     overflow-x: scroll;
     row-gap: 10px;
-    background-color: #1f2a69;
     padding:0px;
     height: fit-content;
 }
@@ -243,7 +242,7 @@ body {
 footer {
     background-color: #333;
     color: white;
-    padding: 2rem 0;
+   padding: 10px;
 }
 
 .footer-content {
