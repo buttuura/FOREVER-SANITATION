@@ -35,12 +35,12 @@ backToTopButton.addEventListener('click', () => {
 
 // Countdown from 0 to 120 for contracts completed
 let count = 0;
-const maxCount = 1201;
+const maxCount = 10000;
 const countElement = document.getElementById('count');
 
 function updateCount() {
     if (count < maxCount) {
-        count = count+100.5;
+        count = count+500;
         countElement.textContent = count;
     }
 }
@@ -101,3 +101,45 @@ function updateCart() {
 
     cartTotal.textContent = total.toFixed(2);
 }
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.circle-container');
+    const circles = document.querySelectorAll('.circle');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const readMoreBtn = document.querySelector('.read-more-btn');
+    const additionalContent = document.querySelector('.additional-content');
+    let currentIndex = 0;
+  
+    function showCircle(index) {
+      const offset = circles[index].offsetLeft - container.offsetLeft;
+      container.scrollTo({ left: offset, behavior: 'smooth' });
+    }
+  
+    prevBtn.addEventListener('click', function() {
+      currentIndex = (currentIndex > 0) ? currentIndex - 1 : circles.length - 1;
+      showCircle(currentIndex);
+    });
+  
+    nextBtn.addEventListener('click', function() {
+      currentIndex = (currentIndex < circles.length - 1) ? currentIndex + 1 : 0;
+      showCircle(currentIndex);
+    });
+  
+    // Auto-scroll every 30 seconds
+    setInterval(function() {
+      currentIndex = (currentIndex < circles.length - 1) ? currentIndex + 1 : 0;
+      showCircle(currentIndex);
+    }, 50000);
+  
+    // Read More functionality
+    readMoreBtn.addEventListener('click', function() {
+      if (additionalContent.style.display === 'none' || additionalContent.style.display === '') {
+        additionalContent.style.display = 'block';
+        readMoreBtn.textContent = 'Read Less';
+      } else {
+        additionalContent.style.display = 'none';
+        readMoreBtn.textContent = 'Read More';
+      }
+    });
+  });
+  
