@@ -142,4 +142,19 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-  
+  document.addEventListener('DOMContentLoaded', function() {
+    const videoPopup = document.getElementById('video-popup');
+    const closeBtn = document.getElementById('close-btn');
+    let hasScrolled = false;
+
+    window.addEventListener('scroll', function() {
+        if (!hasScrolled && window.scrollY > 500) { // Adjust 300 to the desired scroll position
+            videoPopup.style.display = 'block';
+            hasScrolled = true;
+        }
+    });
+
+    closeBtn.addEventListener('click', function() {
+        videoPopup.style.display = 'none';
+    });
+});
