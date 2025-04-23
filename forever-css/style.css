@@ -649,6 +649,40 @@ button:hover {
     background: linear-gradient(135deg, #0056b3, #007BFF);
     transform: scale(1.05);
   }
+
+  /* POP up video*/
+  .content {
+    padding: 20px;
+}
+
+.video-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.video-popup video {
+    width: 100%;
+    max-width: 600px;
+}
+
+.close-btn {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 50px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px;
+} 
   
   /* Responsive Design */
   @media (max-width: 768px) {
